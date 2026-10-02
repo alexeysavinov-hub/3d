@@ -51,6 +51,20 @@ button{font-family:inherit}
 @keyframes glow{0%,100%{opacity:.7}50%{opacity:1}}
 @media (max-width:900px){[data-navlinks]{display:none!important}[data-hero-art]{order:-1}}
 [data-hscroll]::-webkit-scrollbar{display:none}
+@media (max-width:700px){
+[data-hero-cta]{flex-wrap:nowrap!important;gap:8px!important;margin-top:28px!important;width:100%}
+[data-hero-cta]>a{flex:1 1 auto;min-width:0;justify-content:center;padding:14px 10px!important;font-size:13px!important;gap:6px!important;white-space:nowrap;border-radius:12px!important}
+[data-dir]{padding-top:52px!important;padding-bottom:52px!important}
+[data-dir-wrap]{gap:20px!important}
+[data-dir] h2{font-size:28px!important;margin-top:12px!important}
+[data-dir-wrap]>div:first-child p{font-size:15px!important;margin-top:10px!important}
+[data-dir-body]{padding:18px 20px 20px!important;gap:10px!important;justify-content:flex-start!important}
+[data-dir-body] h3{font-size:21px!important}
+[data-dir-body] p{font-size:14px!important;line-height:1.5!important}
+[data-dir-body]>div{gap:10px!important}
+[data-dir-tags]{display:none!important}
+[data-dir-btn]{padding:11px 18px!important;font-size:14px!important;margin-top:4px}
+}
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 </style>
 </helmet>
@@ -80,7 +94,7 @@ button{font-family:inherit}
       <div style="display:inline-flex;align-items:center;gap:12px;font-family:'Space Grotesk',Manrope,sans-serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--ac,#d9ff38);font-weight:600;animation:rise .9s .05s cubic-bezier(.2,.7,.2,1) both"><span style="width:26px;height:1px;background:var(--ac,#d9ff38);display:inline-block"></span>Objects / Design / 2026</div>
       <h1 style="font-family:Unbounded,sans-serif;font-weight:800;font-size:clamp(36px,10.6cqw,88px);line-height:.98;letter-spacing:-.025em;text-transform:uppercase;margin:26px 0 0;max-width:100%;text-wrap:balance;animation:rise 1s .15s cubic-bezier(.2,.7,.2,1) both">Материя <span style="color:var(--ac,#d9ff38);text-shadow:0 0 40px rgba(217,255,56,.25)">с характером.</span></h1>
       <p style="font-size:clamp(17px,1.5vw,20px);line-height:1.6;color:#c1bdcc;margin:26px 0 0;max-width:52ch;text-wrap:pretty;animation:rise 1s .3s cubic-bezier(.2,.7,.2,1) both">Превращаем цифровые идеи в объекты, которые хочется рассматривать, держать в руках и дарить.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:36px;animation:rise 1s .42s cubic-bezier(.2,.7,.2,1) both">
+      <div data-hero-cta style="display:flex;flex-wrap:wrap;gap:12px;margin-top:36px;animation:rise 1s .42s cubic-bezier(.2,.7,.2,1) both">
         <a href="#work" style="display:inline-flex;align-items:center;gap:10px;background:var(--ac,#d9ff38);color:#07050f;font-weight:700;font-size:15px;padding:16px 26px;border-radius:14px;transition:transform .35s,filter .35s;box-shadow:0 14px 40px -14px rgba(217,255,56,.55)" style-hover="transform:translateY(-2px);filter:brightness(1.06)">Смотреть работы <span style="font-family:'Space Grotesk',sans-serif">↘</span></a>
         <a href="#contact" style="display:inline-flex;align-items:center;gap:10px;color:#eeece7;font-weight:600;font-size:15px;padding:16px 26px;border-radius:14px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.03);backdrop-filter:blur(8px);transition:border-color .35s,color .35s,transform .35s" style-hover="border-color:var(--ac,#d9ff38);color:var(--ac,#d9ff38);transform:translateY(-2px)">Создать свой объект <span style="font-family:'Space Grotesk',sans-serif">→</span></a>
       </div>
@@ -161,8 +175,8 @@ button{font-family:inherit}
   </div>
 </section>
 
-<section id="services" data-screen-label="Направления" style="position:relative;padding:clamp(72px,9vw,120px) clamp(16px,4vw,40px);background:#0b0a11">
-  <div style="max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(36px,5vw,56px)">
+<section id="services" data-dir data-screen-label="Направления" style="position:relative;padding:clamp(72px,9vw,120px) clamp(16px,4vw,40px);background:#0b0a11">
+  <div data-dir-wrap style="max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(36px,5vw,56px)">
     <div data-reveal style="opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;align-items:center;text-align:center;gap:0">
       <div style="display:inline-flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--ac,#d9ff38);font-weight:700"><span style="width:22px;height:1px;background:var(--ac,#d9ff38);display:inline-block"></span>Три дисциплины<span style="width:22px;height:1px;background:var(--ac,#d9ff38);display:inline-block"></span></div>
       <h2 style="font-family:Unbounded,sans-serif;font-weight:700;font-size:clamp(30px,4vw,54px);line-height:1.04;letter-spacing:-.02em;margin:18px 0 0;text-wrap:balance">Выбери <span style="color:var(--ac,#d9ff38)">свою сторону.</span></h2>
@@ -175,18 +189,18 @@ button{font-family:inherit}
           <div style="position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,rgba(11,10,17,.9));pointer-events:none"></div>
           <span style="position:absolute;left:22px;top:22px;font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:.2em;color:#eeece7;padding:8px 12px;border-radius:999px;background:rgba(7,5,15,.6);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.12)">01 / Main</span>
         </div>
-        <div style="display:flex;flex-direction:column;justify-content:center;gap:22px;padding:clamp(28px,4vw,48px)">
+        <div data-dir-body style="display:flex;flex-direction:column;justify-content:center;gap:22px;padding:clamp(28px,4vw,48px)">
           <div style="display:flex;flex-direction:column;gap:14px">
             <h3 style="font-family:Unbounded,sans-serif;font-weight:700;font-size:clamp(26px,2.6vw,36px);line-height:1.05;letter-spacing:-.02em;margin:0">3D печать <span style="color:var(--ac,#d9ff38)">под заказ</span></h3>
             <p style="font-size:17px;line-height:1.6;color:#c1bdcc;margin:0;text-wrap:pretty">Коллекционные фигурки, арт-объекты, реквизит и прототипы. От готовой модели до идеи с нуля.</p>
           </div>
-          <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <div data-dir-tags style="display:flex;flex-wrap:wrap;gap:8px">
             <span style="padding:8px 14px;border-radius:999px;background:rgba(217,255,56,.08);border:1px solid rgba(217,255,56,.25);color:#eeece7;font-size:13px;font-weight:600">Фигурки и миниатюры</span>
             <span style="padding:8px 14px;border-radius:999px;background:rgba(217,255,56,.08);border:1px solid rgba(217,255,56,.25);color:#eeece7;font-size:13px;font-weight:600">Арт-объекты</span>
             <span style="padding:8px 14px;border-radius:999px;background:rgba(217,255,56,.08);border:1px solid rgba(217,255,56,.25);color:#eeece7;font-size:13px;font-weight:600">Реквизит</span>
             <span style="padding:8px 14px;border-radius:999px;background:rgba(217,255,56,.08);border:1px solid rgba(217,255,56,.25);color:#eeece7;font-size:13px;font-weight:600">Прототипы</span>
           </div>
-          <a href="#contact" style="display:inline-flex;align-items:center;gap:10px;align-self:flex-start;background:var(--ac,#d9ff38);color:#07050f;font-weight:700;font-size:15px;padding:14px 22px;border-radius:12px;transition:transform .35s,filter .35s" style-hover="transform:translateY(-2px);filter:brightness(1.06)">Обсудить проект <span style="font-family:'Space Grotesk',sans-serif">↗</span></a>
+          <a href="#contact" style="display:inline-flex;align-items:center;gap:10px;align-self:flex-start;background:var(--ac,#d9ff38);color:#07050f;font-weight:700;font-size:15px;padding:14px 22px;border-radius:12px;transition:transform .35s,filter .35s" data-dir-btn style-hover="transform:translateY(-2px);filter:brightness(1.06)">Обсудить проект <span style="font-family:'Space Grotesk',sans-serif">↗</span></a>
         </div>
       </article>
       <article data-reveal data-delay=".08s" style="opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1),border-color .5s;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:24px;overflow:hidden" style-hover="border-color:rgba(252,45,183,.5)">
@@ -194,7 +208,7 @@ button{font-family:inherit}
           <img src="assets/gen/dir-jewelry.jpg" alt="Серебряное кольцо с органической фактурой" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.05)">
           <span style="position:absolute;left:20px;top:20px;font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:.2em;color:#eeece7;padding:8px 12px;border-radius:999px;background:rgba(7,5,15,.6);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.12)">02</span>
         </div>
-        <div style="display:flex;flex-direction:column;justify-content:center;gap:14px;padding:clamp(26px,3vw,40px)">
+        <div data-dir-body style="display:flex;flex-direction:column;justify-content:center;gap:14px;padding:clamp(26px,3vw,40px)">
           <h3 style="font-family:Unbounded,sans-serif;font-weight:700;font-size:22px;line-height:1.1;letter-spacing:-.01em;margin:0">Ювелирные истории</h3>
           <p style="font-size:15px;line-height:1.6;color:#b4b0c1;margin:0;flex:1;text-wrap:pretty">Украшения с личным знаком: серебро, форма, фактура и детали, которые не повторяются.</p>
           <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;color:#fc2db7;font-weight:700;font-size:14px;transition:gap .3s" style-hover="gap:14px;color:#ff6b9b">Придумать вместе <span style="font-family:'Space Grotesk',sans-serif">↗</span></a>
@@ -205,7 +219,7 @@ button{font-family:inherit}
           <img src="assets/gen/dir-graphic.jpg" alt="Постеры и скетчбук с графическим знаком" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.05)">
           <span style="position:absolute;left:20px;top:20px;font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:.2em;color:#eeece7;padding:8px 12px;border-radius:999px;background:rgba(7,5,15,.6);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.12)">03</span>
         </div>
-        <div style="display:flex;flex-direction:column;justify-content:center;gap:14px;padding:clamp(26px,3vw,40px)">
+        <div data-dir-body style="display:flex;flex-direction:column;justify-content:center;gap:14px;padding:clamp(26px,3vw,40px)">
           <h3 style="font-family:Unbounded,sans-serif;font-weight:700;font-size:22px;line-height:1.1;letter-spacing:-.01em;margin:0">Графический дизайн</h3>
           <p style="font-size:15px;line-height:1.6;color:#b4b0c1;margin:0;flex:1;text-wrap:pretty">Айдентика, обложки и визуальные системы для тех, кому тесно в привычном.</p>
           <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;color:#b89ae0;font-weight:700;font-size:14px;transition:gap .3s" style-hover="gap:14px;color:#d2bdf3">Запустить образ <span style="font-family:'Space Grotesk',sans-serif">↗</span></a>
@@ -541,7 +555,7 @@ class Component extends DCLogic {
       const cards = [...g.children].filter(x => x.tagName === 'ARTICLE');
       if (mob) {
         Object.assign(g.style, { display: 'flex', gridTemplateColumns: '', overflowX: 'auto', overflowY: 'hidden', scrollSnapType: 'x mandatory', scrollPaddingLeft: pad + 'px', margin: `0 -${pad}px`, padding: `4px ${pad}px 8px`, gap: '14px', scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch', overscrollBehaviorX: 'contain' });
-        cards.forEach(x => { Object.assign(x.style, { flex: '0 0 min(80vw,330px)', scrollSnapAlign: 'start' }); if (c.dir && x.firstElementChild) x.firstElementChild.style.minHeight = '240px'; });
+        cards.forEach(x => { Object.assign(x.style, { flex: '0 0 min(80vw,330px)', scrollSnapAlign: 'start' }); if (c.dir && x.firstElementChild) x.firstElementChild.style.minHeight = '170px'; });
         if (nav) nav.style.display = 'flex';
       } else {
         Object.assign(g.style, { ...c.grid, overflowX: '', overflowY: '', scrollSnapType: '', scrollPaddingLeft: '', margin: '', padding: '' });
